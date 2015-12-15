@@ -1,0 +1,21 @@
+@import url( '../style.css' );
+
+/* Override width for pages, same as site */
+html .post-type-page.mceContentBody {
+	max-width: 774px !important;
+} 
+
+/* Override settings for posts, same as site */
+html .post-type-post.mceContentBody {
+	font-size: 85% !important;
+	max-width: 714px !important;
+	line-height: 1.3 !important;
+} 
+html .post-type-post.mceContentBody p {
+	margin-bottom: 12px; /* default 24px */
+}
+
+/* Fix: image captions appear much lower below image due to added br. */
+div.mceTemp dt.wp-caption-dt br {
+	display: none;
+}

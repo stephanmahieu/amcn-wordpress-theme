@@ -1,0 +1,48 @@
+div.staff-member {
+  clear:both;
+}
+
+div.staff-member.odd div.staff-item {
+  background-color: #f5ffed;
+}
+div.staff-member.even div.staff-item {
+  background-color: #e6ffde;
+}
+
+div.staff-row {
+  border-bottom: 1px dotted #24890d;
+  display: -ms-flexbox;
+  display: flex;
+}
+div.staff-member.last .staff-row{
+  border-bottom: 0;
+}
+
+div.staff-row:hover div.staff-item {
+  background-color: #24890d;
+  cursor: default;
+  color: #fff;
+}
+div.staff-row:hover div.staff-item a {
+  color: #fff;
+}
+
+div.staff-item  {
+  overflow: hidden;
+  float: left;
+  padding: 2px 8px;
+}
+
+div.staff-name {
+  width: 22%;
+}
+div.staff-position {
+  width: 35%;
+  font-style: italic;
+}
+div.staff-phone {
+  width: 15%;
+}
+div.staff-email-link {
+  width: 28%;
+}

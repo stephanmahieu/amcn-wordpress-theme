@@ -1,0 +1,494 @@
+/*
+Theme Name:  Alaskan Malamute Club NL
+Theme URI: 
+Author:      Stephan Mahieu (parent theme by the WordPress team)
+Author URI:  http://www.amcn.nl/
+Template:    twentyfourteen
+Description: Adaptation (Child) of the wordpress Twenty Fourteen theme for the Alaska Malamute Club Nederland (A.M.C.N.).
+Version:     1.0
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:        black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen-child
+*/
+
+/* Brigth green: #55d737 */
+/* Green       : #41a62a */
+/* Darker green: #24890d */
+
+/* Center the content instead of left-align which looks better on wide dislays */
+.site { margin: 0 auto; }
+
+
+/* Override the width (parent size is 474) */
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+	max-width: 774px;
+}
+.post-navigation,
+.image-navigation {
+	max-width: 774px;
+}
+.archive-header,
+.page-header {
+	max-width: 774px;
+}
+.contributor-info {
+	max-width: 774px;
+}
+.comments-area {
+	max-width: 714px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	line-height: 1.3; /* default 1.5 */
+	font-size: 85%;   /* default 100% */
+	background-color: #e6ffde;
+	/*background-color: rgba(239, 239, 239, 0.84);*/
+	border: 1px solid #cccccc;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.site-main .mu_register,
+.widecolumn > h2,
+.widecolumn > form {
+	max-width: 774px;
+}
+
+
+/* add home image left to the site title */
+h1.site-title a {
+	background: url('images/home18x18.png') no-repeat left center;
+	padding-left: 26px;
+}
+h1.site-title a:hover {
+	background: url('images/home18x18_green.png') no-repeat left center;
+}
+
+
+/* make comments more compact */
+article.comment-body {
+	padding-top: 18px;   /* default 36 */
+	margin-bottom: 12px; /*default 36 */
+}
+
+/* Move the menu a little to the left so submenus fit */
+.primary-navigation {
+	margin-right: 45px;
+}
+
+
+/* Change alignment site-info in the footer */
+.site-info {
+	text-align: right;
+}
+/* Change color site-info in the footer */
+.site-info,
+.site-info a {
+	color: #a0a0a0;
+}
+
+
+
+/* no border between posts */
+.list-view .site-content .hentry {
+	border-top: none;   /* default 1px solid rgba(0, 0, 0, 0.1) */
+	padding-top: 0;  /* default 48px */
+}
+/* keep space between the menu and the first post */
+.full-width .site-content .hentry.has-post-thumbnail:first-child {
+    margin-top: -48px;  /* default -72px; */
+}
+/* Make posts more compact */
+article.type-post {
+	margin-bottom: 30px;  /* default 48px */
+	border: 1px solid #cccccc;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+article.type-post div.entry-content {
+	line-height: 1.3; /* default 1.5 */
+	font-size: 85%;   /* default 100% */
+}
+article.type-post div.entry-content p {
+	margin-bottom: 12px; /* default 24px */
+}
+article.type-post div.entry-content {
+	padding-top: 0px; /* default 12px */
+}
+article.type-post div.entry-meta {
+	margin-bottom: 2px; /* default 8px */
+}
+
+/* Reduce size h1 post title */
+article.type-post header.entry-header h1.entry-title {
+	font-size: 24px;      /* default 33px  */
+	text-transform: none; /* default uppercase */
+	font-weight: 400;
+}
+/* Reduce size h1 post title even more on narrow display */
+@media (max-width: 400px) {
+	article.type-post header.entry-header h1.entry-title {
+		font-size: 18px;
+	}
+}
+/* Reduce size featured image post to max 500 */
+img.wp-post-image {
+	max-width: 500px; /* default 100% */
+}
+/* Reduce size featured image post to available width on narrow display */
+@media (max-width: 499px) {
+	img.wp-post-image {
+		max-width: 100%;
+	}
+}
+article.type-post .post-thumbnail {
+	margin: 0 auto; /* keep it centered */
+	padding-top: 10px;
+}
+/* Make full width image background same width as post */
+article.type-post.hentry {
+	max-width: 774px;
+}
+/* Meta info post (date) */
+article.type-post div.entry-meta {
+	/* display: none; */
+	background-color: transparent;
+}
+/* Hide meta info post author */
+article.type-post  header.entry-header span.author.vcard {
+	display: none;
+}
+.entry-meta a{
+	color: #939393; /* default #767676 */
+}
+/* Reduce size header */
+article.type-post header.entry-header,
+.site-content .has-post-thumbnail .entry-header {
+	padding-top: 16px;   /* default 24px */
+	padding-bottom: 6px; /* default 12px */
+}
+/* Give posts a background color */
+article.type-post header.entry-header,
+article.type-post div.entry-content,
+.site-content .has-post-thumbnail .entry-header {
+	/* background-color: #f0f0f0;*/
+	background-color: rgba(239, 239, 239, 0.84);
+}
+/* article.type-post header.entry-header {
+	do not overlap bottom image
+	margin-top: 0 !important;
+} */
+
+/* Adjust right-aligned images */
+.full-width .site-content blockquote.alignright,
+.full-width .site-content img.size-full.alignright,
+.full-width .site-content img.size-large.alignright,
+.full-width .site-content img.size-medium.alignright,
+.full-width .site-content .wp-caption.alignright {
+	margin-right: 0px; /* default -168px; */
+}
+
+/* Adjust left-aligned images */
+.full-width .site-content blockquote.alignleft,
+.full-width .site-content img.size-full.alignleft,
+.full-width .site-content img.size-large.alignleft,
+.full-width .site-content img.size-medium.alignleft,
+.full-width .site-content .wp-caption.alignleft {
+	margin-left: 0px; /* default -168px; */
+}
+
+
+
+/*------------------------------------------------*/
+/*----------------[Styling table]-----------------*/
+/*------------------------------------------------*/
+
+article.type-page table {
+	background-color: #f5ffed; /* #e6ffde; */
+	border: 1px solid #24890d;
+}
+article.type-page table th {
+	color: #fff;
+	background-color: #24890d;
+	text-transform: none;
+	font-variant: small-caps;
+	cursor: default;
+}
+article.type-page table td {
+	vertical-align: top;
+	cursor: default;
+	border-color: #a1d0a1;
+}
+article.type-page table tr:first-child th {
+  border-top: 0;
+}
+article.type-page table tr:last-child td {
+  border-bottom: 0;
+}
+article.type-page table tr td:first-child,
+article.type-page table tr th:first-child {
+  border-left: 0;
+}
+article.type-page table tr td:last-child,
+article.type-page table tr th:last-child {
+  border-right: 0;
+}
+
+
+/*------------------------------------------------*/
+/*------------[Styling unordered list]------------*/
+/*------------------------------------------------*/
+
+/* Bullet list level 1, use an image (replacing disc) */
+ul li {
+	list-style-image: url('images/paw-bullet.png');
+}
+
+/* Bullet list sidebar, keep using disc here */
+div#primary-sidebar ul li
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+/* List level 2, use disc bullet */
+ul ul li {
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+/* List level 3, use circle bullet */
+ul ul ul li {
+	list-style-type: circle;
+	list-style-image: none;
+}
+
+/* List level 4 and up, use square bullet */
+ul ul ul ul i {
+	list-style-type: square;
+}
+
+/* reduce space between a paragraph and an unordered list */
+p + ul {  
+   margin-top: -0.9em;
+}
+
+/*------------------------------------------------*/
+/*--------------[styling Blockquote]--------------*/
+/*------------------------------------------------*/
+
+blockquote {
+	font-size: 16px;*/
+	font-style: italic;
+	margin-top: 6px;
+	margin-bottom: 12px;
+	padding: 0.25em 40px 0.25em 44px;
+	line-height: 1.45;
+	position: relative;
+	color: #000000;
+	background:#f4f4f4;
+	border-radius: 3px;
+	box-shadow: -1px -1px 4px 2px rgba(65, 65, 65, 0.25);
+	-moz-box-shadow: -1px -1px 4px 2px rgba(65, 65, 65, 0.25);
+	-webkit-box-shadow: -1px -1px 4px 2px rgba(65, 65, 65, 0.25);
+}
+
+blockquote:before,
+blockquote:after {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 110px;
+	color: #C6C6C6;
+	filter: alpha(opacity=50); /* IE 5-7 */
+	opacity: 0.75;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	position: absolute;
+	left: -5px;
+	top: -32px;
+}
+
+blockquote:after {
+	position: absolute;
+	content: "\201D";
+	right: 10px;
+	bottom: 30px;
+	line-height: 0.1em;
+}
+
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 15px;
+	text-align: right;
+}
+
+blockquote p {
+	padding-top: 12px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+
+/*------------------------------------------------*/
+/*------------[AMCN Shortcode styling]------------*/
+/*------------------------------------------------*/
+
+.center-box-outer {
+	display: flex;
+	flex-direction: column;
+}
+.center-box-inner {
+  margin: 0 auto;
+}
+
+.geboortebericht,
+.dekbericht,
+.planbericht {
+	width: 500px ;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 1.35;
+	background-color: #F0F0F0;
+	border: 1px solid #BCBCBC;
+	padding: 8px 4px 15px 4px;
+	border-radius: 5px;
+	-moz-box-shadow: 7px 7px 5px #aaa;
+	-webkit-box-shadow: 7px 7px 5px #aaa;
+	box-shadow: 7px 7px 5px #aaa;
+}
+.geboortebericht {
+	background-image: url("images/stroller.png");
+	background-position: 99% 8px;
+	background-repeat: no-repeat;
+}
+.dekbericht {
+	background-image: url("images/two-hearts.png");
+	background-position: 99% 8px;
+	background-repeat: no-repeat;
+}
+.planbericht {
+	background-image: url("images/calendar.png");
+	background-position: 99% 8px;
+	background-repeat: no-repeat;
+}
+.geboorte-kennel,
+.dek-kennel {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.gender_label {
+	font-weight: bold
+}
+.geboorte-reu,
+.dek-reu,
+.geboorte-teef,
+.dek-teef{
+	text-align: left;
+}
+.geboorte-contact,
+.dek-contact,
+.geboorte-datum,
+.geboorte-aantalbeschikbaar {
+}
+.geboorte-aantal {
+	margin-right: 8px;
+	font-weight: bold;
+}
+.geboorte-beschikbaar {
+	color: #B40000;
+	font-style: italic;
+}
+.dekbericht .center-box-outer,
+.geboortebericht .center-box-outer,
+.planbericht .center-box-outer {
+	margin: 6px 0;
+}
+
+/*------------------------------------------------*/
+/*-----------[Fast Secure Contact Form]-----------*/
+/*------------------------------------------------*/
+
+/* Alignment DIVs */
+.fscf-div-form              { width:99%; max-width:555px; }
+.fscf-div-left-box          { float:left; width:55%; max-width:270px; }
+.fscf-div-right-box         { float:left; width:235px; }
+.fscf-div-clear             { clear:both; }
+.fscf-div-field-left        { clear:left; float:left; width:99%; max-width:550px; margin-right:10px; }
+.fscf-div-field-prefollow   { clear:left; float:left; width:99%; max-width:340px; margin-right:10px; }
+.fscf-div-field-follow      { float:left; padding-left:10px; width:99%; max-width:130px; }
+.fscf-div-label             { text-align:left; padding-top:5px; }
+.fscf-div-field             { text-align:left; }
+.fscf-div-captcha-sm        { width:175px; height:50px; padding-top:2px; }
+.fscf-div-captcha-m         { width:250px; height:65px; padding-top:2px; }
+.fscf-image-captcha         { border-style:none; margin:0; padding:0px; padding-right:5px; float:left; }
+.fscf-image-captcha-refresh { border-style:none; margin:0; padding:0px; vertical-align:bottom; }
+.fscf-div-submit            { text-align:left; clear:both; padding-top:15px; }
+.fscf-fieldset              { border:1px solid black; width:99%; max-width:550px; padding:10px; }
+
+/* Styles of labels, fields and text */
+.fscf-required-indicator { text-align:left; }
+.fscf-required-text      { text-align:left; font-style:italic; }
+.fscf-hint-text          { font-size:x-small; font-weight:normal; }
+.fscf-div-error          { text-align:left; color:red; }
+.fscf-div-redirecting    { text-align:left; font-weight:bold; font-style:italic; }
+.fscf-fieldset-field     { border:1px solid grey; width:97%; max-width:500px; padding:10px; }
+.fscf-label              { display:inline; font-size: 95%; }
+.fscf-option-label       { display:inline; }
+.fscf-input-text         { text-align:left; margin:0; width:99%; max-width:340px; }
+.fscf-input-captcha      { text-align:left; margin:0; width:50px; }
+.fscf-input-textarea     { text-align:left; margin:0; width:99%; max-width:340px; height:90px; }
+.fscf-input-select       { text-align:left; }
+.fscf-input-checkbox     { width:22px; height:32px; }
+.fscf-input-radio        { width:22px; height:32px; }
+.fscf-button-submit      { cursor:pointer; margin:0; font-size:1.0em; color:#FFFFFF; font-weight:bold; }
+.fscf-button-reset       { cursor:pointer; margin:0; }
+.fscf-button-vcita       { text-decoration:none; display:block; text-align:center; background:linear-gradient(to bottom, #ed6a31 0%, #e55627 100%); color:#fff !important; padding:10px; }
+.fscf-button-div-vcita   { border-left:1px dashed #ccc; margin-top:25px; height:50px; padding:8px 20px; }
+.fscf-powered-by         { font-size:x-small; font-weight:normal; padding-top:5px; text-align:center; }
+
+/* Do not override the global Placeholder styles */
+/* Placeholder Style - WebKit browsers - Safari, Chrome */
+/* ::-webkit-input-placeholder { opacity:0.6; color:#333333; } */
+/* Placeholder Style - Mozilla Firefox 4 - 18 */
+/* :-moz-placeholder { opacity:0.6; color:#333333; } */
+/* Placeholder Style - Mozilla Firefox 19+ */
+/* ::-moz-placeholder { opacity:0.6; color:#333333; } */
+/* Placeholder Style - Internet Explorer 10+ */
+/* :-ms-input-placeholder { opacity:0.6; color:#333333; } */
+
+/* Give each text-input field a backgroud color */
+.fscf-div-form input[type=text],
+.fscf-div-form input[type=file],
+.fscf-div-form textarea  {
+	background-color: #f5f5f5;
+	box-shadow: 2px 2px 0 #828181 inset;
+	border-radius: 3px;
+	padding: 6px;
+}
+
+/* fix alignment */
+.fscf-option-label {
+	vertical-align: top;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	margin-top: -4px;
+}
+
+.fscf-div-form legend {
+	padding: 0 3px;
+	color: #24890d;
+	width: auto;
+}
