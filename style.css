@@ -447,9 +447,10 @@ th span.fokinfo {
 	background-color: #55d737;
 }
 
-/* MAke Basic Google Maps Placemakrs plugin more responsive */
+/* Make Basic Google Maps Placemakrs plugin more responsive */
 #bgmp_map-canvas{
 	width: 100% !important;
+	border: 1px solid #24890d;
 }
 
 /*------------------------------------------------*/
