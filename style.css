@@ -287,7 +287,7 @@ p + ul {
 /*------------------------------------------------*/
 
 blockquote {
-	font-size: 16px;*/
+	font-size: 16px;
 	font-style: italic;
 	margin-top: 6px;
 	margin-bottom: 12px;
@@ -422,6 +422,34 @@ blockquote cite:before {
 .geboortebericht .center-box-outer,
 .planbericht .center-box-outer {
 	margin: 6px 0;
+}
+
+/*------------------------------------------------*/
+/*----------[Tabel aangesloten fokkers]-----------*/
+/*------------------------------------------------*/
+th.fokinfo-column {
+	min-width: 8.0em;
+	padding: 5px;
+}
+span.fokinfo {
+	font-size: 12px;
+	display: inline-block;
+	background-color: #41a62a;
+	color: white;
+	font-weight: bold;
+	padding: 1px;
+	min-width: 12px;
+	border-radius: 12px;
+	border: 1px solid #24890d;
+	text-align: center;
+}
+th span.fokinfo {
+	background-color: #55d737;
+}
+
+/* MAke Basic Google Maps Placemakrs plugin more responsive */
+#bgmp_map-canvas{
+	width: 100% !important;
 }
 
 /*------------------------------------------------*/
