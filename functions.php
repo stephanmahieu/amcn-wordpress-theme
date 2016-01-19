@@ -81,3 +81,9 @@ function amcn_language_setup() {
     load_child_theme_textdomain( 'twentyfourteen', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'amcn_language_setup' );
+
+// Change the marker for the basic-google-maps-placemarks plugin
+function setBGMPDefaultIcon( $iconURL ) {
+    return get_stylesheet_directory_uri() . '/images/bgmp-map-marker.png';
+}
+add_filter( 'bgmp_default-icon', 'setBGMPDefaultIcon' );
