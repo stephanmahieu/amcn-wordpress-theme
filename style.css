@@ -438,20 +438,33 @@ span.fokinfo {
 	color: white;
 	font-weight: bold;
 	padding: 1px;
+	margin-bottom: 2px;
 	min-width: 12px;
 	border-radius: 12px;
 	border: 1px solid #24890d;
 	text-align: center;
 }
 th span.fokinfo {
-	background-color: #55d737;
+	border-color: #55d737;
 }
 
-/* Make Basic Google Maps Placemakrs plugin more responsive */
+/* Make "Basic Google Maps Placemarks" plugin more responsive */
 #bgmp_map-canvas{
 	width: 100% !important;
 	border: 1px solid #24890d;
 }
+
+/*------------------------------------------------*/
+/*-------------[Table Sorter plugin]--------------*/
+/*------------------------------------------------*/
+
+/* Use white arrows instead of black, position at top */
+table.tablesorter thead tr .header {
+    background-image: url("images/sort_bg.gif");
+    background-position: right 20%;
+}
+table.tablesorter thead tr .headerSortUp {background-image: url("images/sort_asc.gif")}
+table.tablesorter thead tr .headerSortDown {background-image: url("images/sort_desc.gif")}
 
 /*------------------------------------------------*/
 /*-----------[Fast Secure Contact Form]-----------*/
