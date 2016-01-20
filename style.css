@@ -12,12 +12,12 @@ Tags:        black, green, white, light, dark, two-columns, three-columns, left-
 Text Domain: twentyfourteen-child
 */
 
-/* Lightgreen bg: #f5ffed */
-/* Brigth green : #55d737 */
-/* Green        : #41a62a */
-/* Darker green : #24890d */
+/* Light green bg: #f5ffed */
+/* Bright green  : #55d737 */
+/* Green         : #41a62a */
+/* Darker green  : #24890d */
 
-/* Center the content instead of left-align which looks better on wide dislays */
+/* Center the content instead of left-align which looks better on wide displays */
 .site { margin: 0 auto; }
 
 
@@ -522,7 +522,7 @@ th.sorting-desc{background-image: url("images/sort_desc.gif")}
 /* Placeholder Style - Internet Explorer 10+ */
 /* :-ms-input-placeholder { opacity:0.6; color:#333333; } */
 
-/* Give each text-input field a backgroud color */
+/* Give each text-input field a background color */
 .fscf-div-form input[type=text],
 .fscf-div-form input[type=file],
 .fscf-div-form textarea  {
