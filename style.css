@@ -455,16 +455,16 @@ th span.fokinfo {
 }
 
 /*------------------------------------------------*/
-/*-------------[Table Sorter plugin]--------------*/
+/*-------------[Stupid Table Sorter]--------------*/
 /*------------------------------------------------*/
-
-/* Use white arrows instead of black, position at top */
-table.tablesorter thead tr .header {
-    background-image: url("images/sort_bg.gif");
-    background-position: right 20%;
+th[data-sort]{
+	cursor: pointer;
+	background-image: url("images/sort_bg.gif"); 
+	background-repeat: no-repeat; 
+	background-position: right 20%;
 }
-table.tablesorter thead tr .headerSortUp {background-image: url("images/sort_asc.gif")}
-table.tablesorter thead tr .headerSortDown {background-image: url("images/sort_desc.gif")}
+th.sorting-asc{background-image: url("images/sort_asc.gif")}
+th.sorting-desc{background-image: url("images/sort_desc.gif")}
 
 /*------------------------------------------------*/
 /*-----------[Fast Secure Contact Form]-----------*/

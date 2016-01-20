@@ -87,3 +87,28 @@ function setBGMPDefaultIcon( $iconURL ) {
     return get_stylesheet_directory_uri() . '/images/bgmp-map-marker.png';
 }
 add_filter( 'bgmp_default-icon', 'setBGMPDefaultIcon' );
+
+/**
+ * Add table sort functionality using the (very small) Stupid-Table-Plugin lib
+ *
+ * @see http://joequery.github.io/Stupid-Table-Plugin/
+ * 
+ * Example:
+ * <table id="simpleTable">
+ *   <thead>
+ *     <tr>
+ *       <th data-sort="int">int</th>
+ *       <th data-sort="float">float</th>
+ *       <th data-sort="string">string</th>
+ *     </tr>
+ *   </thead>
+ *   <tbody>
+ *     ...
+ */
+function amcn_tablesort_scripts() {
+	wp_enqueue_script( 'amcn_tablesort_lib', get_stylesheet_directory_uri() . '/js/stupidtable.min.js', array('jquery'), '20150315', true );
+	wp_enqueue_script( 'amcn_tablesort_script', get_stylesheet_directory_uri() . '/js/tablesort.js', array('jquery'), '20150315', true );
+	//put styling in amcn-theme style.css
+	//wp_enqueue_style('amcn_tablesort_css', get_stylesheet_directory_uri() . '/css/tablesort.css');
+}
+add_action( 'wp_enqueue_scripts', 'amcn_tablesort_scripts' );
