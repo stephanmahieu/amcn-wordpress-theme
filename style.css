@@ -451,7 +451,6 @@ th span.fokinfo {
 /* Make "Basic Google Maps Placemarks" plugin more responsive */
 #bgmp_map-canvas{
 	width: 100% !important;
-	height: 450px !important;
 	border: 1px solid #24890d;
 }
 
