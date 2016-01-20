@@ -70,6 +70,13 @@ add_action( 'init', 'register_amcn_shortcodes');
 add_action( 'init', 'register_amcn_buttons');
 
 
+// enable the paste-as-plain-text button by default
+function enablePasteAsPlainText( $mceInit ) {
+	$mceInit[ 'paste_as_text' ] = true;
+	return $mceInit;
+}
+add_filter( 'tiny_mce_before_init', 'enablePasteAsPlainText' );
+
 // Add custom editor styling
 function amcn_theme_editor_styles() {
 	add_editor_style( get_stylesheet_directory_uri() . '/css/custom-editor-style.css' );
