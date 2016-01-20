@@ -12,9 +12,10 @@ Tags:        black, green, white, light, dark, two-columns, three-columns, left-
 Text Domain: twentyfourteen-child
 */
 
-/* Brigth green: #55d737 */
-/* Green       : #41a62a */
-/* Darker green: #24890d */
+/* Lightgreen bg: #f5ffed */
+/* Brigth green : #55d737 */
+/* Green        : #41a62a */
+/* Darker green : #24890d */
 
 /* Center the content instead of left-align which looks better on wide dislays */
 .site { margin: 0 auto; }
@@ -448,7 +449,10 @@ th span.fokinfo {
 	border-color: #55d737;
 }
 
-/* Make "Basic Google Maps Placemarks" plugin more responsive */
+/*------------------------------------------------*/
+/*---------[Basic Google Maps Placemarks]---------*/
+/*------------------------------------------------*/
+/* Make width more responsive */
 #bgmp_map-canvas{
 	width: 100% !important;
 	border: 1px solid #24890d;
