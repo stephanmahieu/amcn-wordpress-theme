@@ -89,6 +89,17 @@ function amcn_language_setup() {
 }
 add_action( 'after_setup_theme', 'amcn_language_setup' );
 
+// add scroll to top functionality
+function amcn_scroll_top_header() {
+	wp_enqueue_script( 'amcn_scroll_top_lib', get_stylesheet_directory_uri() . '/js/scroll-top.js', array('jquery'), '20150315', true );
+	wp_enqueue_style(  'amcn_scroll_top_css', get_stylesheet_directory_uri() . '/css/scroll-top.css' );
+}
+function amcn_scroll_top_footer() {
+	echo '<div id="scroll-to-top" title="Naar boven"></div>';
+}
+add_action( 'wp_enqueue_scripts', 'amcn_scroll_top_header' );
+add_action( 'wp_footer', 'amcn_scroll_top_footer' );
+
 // Change the marker for the basic-google-maps-placemarks plugin
 function setBGMPDefaultIcon( $iconURL ) {
     return get_stylesheet_directory_uri() . '/images/bgmp-map-marker.png';

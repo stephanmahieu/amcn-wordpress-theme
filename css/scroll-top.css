@@ -1,0 +1,39 @@
+div#scroll-to-top {
+	color: #eeeeee;
+	background-color: #84ba78;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 2px;
+	padding-top: 2px;
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	height: 33px;
+	width: 35px;
+	line-height: 33px;
+	opacity: 0;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+}
+div#scroll-to-top:before {
+	content: "\25B2";
+}
+div#scroll-to-top:hover {
+	background-color: #24890d;
+	opacity: 0.8;
+	color: #ffffff;
+}
+body.rtl div#scroll-to-top {
+	left: 30px;
+}
+@media only screen and (max-width: 480px) {
+	div#scroll-to-top {
+		right: 0;
+		bottom: 0;
+	}
+	body.rtl div#scroll-to-top {
+		left: 0;
+		bottom: 0;
+	}
+}
