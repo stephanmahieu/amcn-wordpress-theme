@@ -52,16 +52,17 @@ add_action( 'wp_enqueue_scripts', 'amcn_scripts' );
 
 
 // Use SSL for loading fonts (otherwise refuses to load in FF)
-function amcn_fonts() {
-	//fixed in twentyfourteen v1.5
-	//wp_dequeue_style( 'twentyfourteen-lato' );
-	//wp_enqueue_style( 'twentyfourteen-lato-ssl', amcn_twentyfourteen_lato_font_url(), array(), null );
-
-	// use the same trick for font-awesome used by the 'scroll back to top' plugin
-	wp_dequeue_style( 'font-awesome' );
-	wp_enqueue_style( 'font-awesome-ssl', 'https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' );
-}
-add_action( 'wp_enqueue_scripts', 'amcn_fonts', 11 );
+//function amcn_fonts() {
+//	//fixed in twentyfourteen v1.5
+//	//wp_dequeue_style( 'twentyfourteen-lato' );
+//	//wp_enqueue_style( 'twentyfourteen-lato-ssl', amcn_twentyfourteen_lato_font_url(), array(), null );
+//
+//	//awesome now only used by the 'WP Mailto Links' plugin which already uses the ssl variant
+//	//and only loads this when (mail)icons are being used
+//	//wp_dequeue_style( 'font-awesome' );
+//	//wp_enqueue_style( 'font-awesome-ssl', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+//}
+//add_action( 'wp_enqueue_scripts', 'amcn_fonts', 11 );
 
 
 // Define some AMCN Specific shortcodes (plus TinyMCE editor buttons)
