@@ -6,7 +6,7 @@ div#scroll-to-top {
 	border-radius: 2px;
 	padding-top: 2px;
 	position: fixed;
-	bottom: 60px;
+	bottom: 50px;
 	right: 50px;
 	height: 33px;
 	width: 35px;
@@ -25,7 +25,17 @@ div#scroll-to-top:hover {
 	color: #ffffff;
 }
 body.rtl div#scroll-to-top {
-	left: 30px;
+	left: 50px;
+}
+@media only screen and (max-width: 1180px) {
+	div#scroll-to-top {
+		right: 15px;
+		bottom: 25px;
+	}
+	body.rtl div#scroll-to-top {
+		left: 15px;
+		bottom: 25px;
+	}
 }
 @media only screen and (max-width: 480px) {
 	div#scroll-to-top {
