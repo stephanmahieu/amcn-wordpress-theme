@@ -79,6 +79,11 @@ article.comment-body {
 	margin-right: 45px;
 }
 
+/* Reduce the offset so submenu's do not disappear off screen */
+.primary-navigation ul ul li:hover > ul,
+.primary-navigation ul ul li.focus > ul {
+	left: 40%; /* default 100% */
+}
 
 /* Change alignment site-info in the footer */
 .site-info {
