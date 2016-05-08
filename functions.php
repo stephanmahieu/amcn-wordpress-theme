@@ -37,6 +37,16 @@
 $content_width = 774;
 //}
 
+
+// Disable auto-embeds for WordPress >= v3.5 (in addition to the "Disable Embeds" plugin)
+// Removed embeds are still placed in a <blockquote class>, removing this filter will fix this.
+remove_filter( 'the_content', array( $GLOBALS['wp_embed'], 'autoembed' ), 8 );
+// More removals too make sure nothing happens to links I add to content
+remove_shortcode( 'embed' );
+remove_filter( 'the_content', array( $GLOBALS['wp_embed'], 'run_shortcode' ), 8 );
+remove_action( 'edit_form_advanced', array( $GLOBALS['wp_embed'], 'maybe_run_ajax_cache' ), 8 );
+
+
 function amcn_theme_enqueue_styles() {
 	// get the parent style as a base for further customization
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
