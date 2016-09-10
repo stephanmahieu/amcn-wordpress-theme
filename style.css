@@ -20,6 +20,8 @@ Text Domain: twentyfourteen-child
 /* Center the content instead of left-align which looks better on wide displays */
 .site { margin: 0 auto; }
 
+/* reduce margin-top headings for h5 and h6 (default 36px) */
+h5, h6 {margin-top: 18px}
 
 /* Override the width (parent size is 474) */
 .site-content .entry-header,
