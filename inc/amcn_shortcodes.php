@@ -133,7 +133,7 @@ function plan_bericht_function($atts, $content = null) {
 function gender_label($line) {
 	$idx = strpos($line,':');
 	if ($idx) {
-		$return_string = '<span class="gender_label">' . substr($line, 0, $idx+1) . '</span>' . substr($line, $idx+1);
+		$return_string = '<span class="gender_label">' . substr($line, 0, $idx+1) . '</span><span class="dek-naam">' . substr($line, $idx+1) . '</span>';
 	} else {
 		$return_string = $line;
 	}
