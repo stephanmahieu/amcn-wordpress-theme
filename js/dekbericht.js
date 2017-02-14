@@ -5,6 +5,7 @@
 				title : 'Dekbericht',
 				image : url+'/dekberichtbutton.png',
 				onclick : function() {
+					//var dummy = prompt("Hello world", "ok");
 					ed.execCommand('mceInsertContent', false, 
 						'[dek-bericht]<br>' +
 						'Kennelnaam<br>' +
@@ -12,7 +13,7 @@
 						'Contactinfo (tel. )<br>' +
 						'Reu: ?<br>' +
 						'Teef: ?<br>' +
-						'Dekdatum: d-m-j<br>' +
+						'Dekdatum: dd-mm-jjjj?<br>' +
 						'[/dek-bericht]');
 				}
 			});
@@ -26,7 +27,7 @@
 				author : 'Stephan Mahieu',
 				authorurl : 'http://web.inter.nl.net/users/S.J.Mahieu/',
 				infourl : 'http://web.inter.nl.net/users/S.J.Mahieu/',
-				version : "1.1"
+				version : "1.0"
 			};
 		}
 	});
