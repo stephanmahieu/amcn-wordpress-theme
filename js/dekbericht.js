@@ -13,6 +13,7 @@
 						'Contactinfo (tel. )<br>' +
 						'Reu: ?<br>' +
 						'Teef: ?<br>' +
+						'Dekdatum: dd-mm-jjjj?<br>' +
 						'[/dek-bericht]');
 				}
 			});
