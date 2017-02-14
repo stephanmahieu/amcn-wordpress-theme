@@ -66,7 +66,7 @@ function geboorte_bericht_function($atts, $content = null) {
 
 /**
  * Shortcode function for generating a dekbericht.
- * The 5 lines between start and endtag are styled into a dekbericht.
+ * The 6 lines between start and endtag are styled into a dekbericht.
  * 
  * @return string
  */
@@ -88,7 +88,7 @@ function dek_bericht_function($atts, $content = null) {
 		$return_string .= '<div class="dek-datum">' . $lines[6] . '</div>';
 		if (count($lines) > 6) {
 			// keep additional unexpected lines
-			for ($x = 6; $x <= count($lines); $x++) {
+			for ($x = 7; $x <= count($lines); $x++) {
 				$return_string .= '<div class="dek-contact">' . $lines[$x] . '</div>';
 			}
 		}
