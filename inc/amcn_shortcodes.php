@@ -77,7 +77,7 @@ function dek_bericht_function($atts, $content = null) {
 
 	$lines = amcn_convertToArray($content);
 
-	if (count($lines) >= 5) {
+	if (count($lines) >= 6) {
 		$return_string = '<div class="dekbericht">';
 		$return_string .= '<div class="dek-kennel"><a href="' . $lines[2] . '" target="_blank">' . $lines[1] . '</a></div>';
 		$return_string .= '<div class="dek-contact">' . $lines[3] . '</div>';
@@ -85,7 +85,8 @@ function dek_bericht_function($atts, $content = null) {
 		$return_string .= '<div class="dek-reu">' . gender_label($lines[4]) . '</div>';
 		$return_string .= '<div class="dek-teef">' . gender_label($lines[5]) . '</div>';
 		$return_string .= '</div></div>';
-		if (count($lines) > 5) {
+		$return_string .= '<div class="dek-datum">' . $lines[6] . '</div>';
+		if (count($lines) > 6) {
 			// keep additional unexpected lines
 			for ($x = 6; $x <= count($lines); $x++) {
 				$return_string .= '<div class="dek-contact">' . $lines[$x] . '</div>';
