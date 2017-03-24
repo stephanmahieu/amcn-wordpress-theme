@@ -12,7 +12,7 @@
 						'Contactinfo (tel. )<br>' +
 						'Reu: ?<br>' +
 						'Teef: ?<br>' +
-						'Dekdatum: dd-mm-jjjj?<br>' +
+						'Dekdatum: d-m-j<br>' +
 						'[/dek-bericht]');
 				}
 			});
