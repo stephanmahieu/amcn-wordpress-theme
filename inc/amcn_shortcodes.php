@@ -142,12 +142,50 @@ function gender_label($line) {
 }
 
 /**
+ * Shortcode function for scheduling content.
+ * Content between enclosed shortcode will show only if between given date-times.
+ * Provide at least one date-time.
+ *
+ * Example:
+ * [schedule-content show="01-06-2017 23:59:59" hide="30-06-2017 23:59:59"]This is the scheduled content.[/schedule-content]
+ *
+ * @return string
+ */
+function schedule_content_function($atts, $content = null) {
+    // Get the current local time in Unix timestamp format (i.e. epoch).
+    $curStamp = current_time('timestamp');
+
+    // Get the shortcode attributes
+    $defaults = array(
+        'show' => '',
+        'hide' => ''
+    );
+    $a = shortcode_atts($defaults, $atts);
+
+    $dateformat = 'd-m-Y H:i:s';
+    $showStamp = ($a['show'] == '') ? null : DateTime::createFromFormat($dateformat, $a['show'])->getTimestamp();
+    $hideStamp = ($a['hide'] == '') ? null : DateTime::createFromFormat($dateformat, $a['hide'])->getTimestamp();
+
+    if ($showStamp != null && $curStamp >= $showStamp) {
+        if ($hideStamp == null || ($curStamp < $hideStamp)) {
+            return do_shortcode($content);
+        }
+    }
+    if ($showStamp == null && $hideStamp != null && ($curStamp < $hideStamp)) {
+        return do_shortcode($content);
+    }
+    return '';
+}
+
+/**
  *  shortcodes register function.
  */
 function register_amcn_shortcodes() {
 	add_shortcode('geboorte-bericht', 'geboorte_bericht_function');
 	add_shortcode('dek-bericht',      'dek_bericht_function');
 	add_shortcode('plan-bericht',     'plan_bericht_function');
+
+    add_shortcode('schedule-content', 'schedule_content_function');
 }
 
 
