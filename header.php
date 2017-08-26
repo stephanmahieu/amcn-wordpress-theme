@@ -29,10 +29,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#426d7d">
     <meta name="apple-mobile-web-app-title" content="Alaska Malamute Club">
     <meta name="application-name" content="Alaska Malamute Club">
-    <meta name="theme-color" content="#7fcbe3">
+    <meta name="theme-color" content="#426d7d">
     <!-- favicon stuff end -->
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
