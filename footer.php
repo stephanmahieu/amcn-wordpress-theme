@@ -17,7 +17,7 @@
 			<?php get_sidebar( 'footer' ); ?>
 
 			<div class="site-info">
-				Webmaster: <a href="mailto:<?php echo antispambot('webmaster@malamuteclub.com',1); ?>">Stephan Mahieu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; Alaska Malamute Club Nederland, 2017. Alle rechten voorbehouden.
+                Webmaster: <a href="mailto:<?php echo antispambot('webmaster@malamuteclub.com',1); ?>">Stephan Mahieu</a> | Copyright &copy; Alaska Malamute Club Nederland, <?php echo date('Y'); ?>. Alle rechten voorbehouden. | <a href="http://www.amcn.nl/algemeen/privacyverklaring/">Privacyverklaring</a>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
