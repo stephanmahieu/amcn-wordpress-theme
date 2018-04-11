@@ -220,34 +220,36 @@ aside h1.widget-title {
 /*----------------[Styling table]-----------------*/
 /*------------------------------------------------*/
 
-article.type-page table {
-	background-color: #f5ffed; /* #e6ffde; */
+article table {
 	border: 1px solid #24890d;
 }
-article.type-page table th {
+article.type-page table {
+	background-color: #f5ffed; /* #e6ffde; */
+}
+article table th {
 	color: #fff;
 	background-color: #24890d;
 	text-transform: none;
 	font-variant: small-caps;
 	cursor: default;
 }
-article.type-page table td {
+article table td {
 	vertical-align: top;
 	cursor: default;
 	border-color: #a1d0a1;
 }
-article.type-page table tr:first-child th {
+article table tr:first-child th {
   border-top: 0;
 }
-article.type-page table tr:last-child td {
+article table tr:last-child td {
   border-bottom: 0;
 }
-article.type-page table tr td:first-child,
-article.type-page table tr th:first-child {
+article table tr td:first-child,
+article table tr th:first-child {
   border-left: 0;
 }
-article.type-page table tr td:last-child,
-article.type-page table tr th:last-child {
+article table tr td:last-child,
+article table tr th:last-child {
   border-right: 0;
 }
 
@@ -560,4 +562,33 @@ input[type="radio"] {
 	padding: 0 3px;
 	color: #24890d;
 	width: auto;
+}
+
+/*------------------------------------------------*/
+/*----------------[Contact Form 7]----------------*/
+/*------------------------------------------------*/
+.wpcf7-text     { text-align:left; margin:0; width:99%; max-width:340px; }
+.wpcf7-textarea { text-align:left; margin:0; width:99%; max-width:340px; height:90px; }
+
+.wpcf7-form fieldset {
+	border: 1px solid black;
+	width: 99%;
+	max-width: 550px;
+	padding: 10px;
+}
+
+.wpcf7-form fieldset legend {
+	padding: 0 3px;
+	color: #24890d;
+	width: auto;
+}
+
+/* Give each text-input field a background color */
+.wpcf7-text,
+.wpcf7-textarea,
+.wpcf7-file{
+	background-color: #f5f5f5;
+	box-shadow: 2px 2px 0 #828181 inset;
+	border-radius: 3px;
+	padding: 6px;
 }
