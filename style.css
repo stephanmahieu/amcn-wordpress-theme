@@ -567,14 +567,17 @@ input[type="radio"] {
 /*------------------------------------------------*/
 /*----------------[Contact Form 7]----------------*/
 /*------------------------------------------------*/
-.wpcf7-text     { text-align:left; margin:0; width:99%; max-width:340px; }
-.wpcf7-textarea { text-align:left; margin:0; width:99%; max-width:340px; height:90px; }
+.wpcf7-text,
+.wpcf7-date,
+.wpcf7-textarea { text-align:left; margin:0; width:99%; max-width:340px; }
+.wpcf7-textarea { height:90px; }
 .wpcf7-total    { text-align: right; }
 .wpcf7-small    { max-width: 100px; }
 .wpcf7-form fieldset { border: 1px solid black;	width: 99%;	max-width: 550px; padding: 10px; }
 .wpcf7-form fieldset legend { padding: 0 3px; color: #24890d; width: auto; }
 /* Give each text-input field a background color */
 .wpcf7-text,
+.wpcf7-date,
 .wpcf7-textarea,
 .wpcf7-number,
 .wpcf7-total,
@@ -584,6 +587,8 @@ input[type="radio"] {
 	border-radius: 3px;
 	padding: 6px;
 }
+.wpcf7-date,
+.wpcf7-form-control-wrap.Postcode .wpcf7-text { max-width:120px; }
 /* 2 or 3 column fields layout */
 .wpcf7-one-half,
 .wpcf7-one-third,
