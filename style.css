@@ -573,6 +573,7 @@ input[type="radio"] {
 .wpcf7-textarea { height:90px; }
 .wpcf7-total    { text-align: right; }
 .wpcf7-small    { max-width: 100px; }
+.wpcf7-medium   { max-width: 150px; }
 .wpcf7-form fieldset { border: 1px solid black;	width: 99%;	max-width: 550px; padding: 10px; }
 .wpcf7-form fieldset legend { padding: 0 3px; color: #24890d; width: auto; }
 /* Give each text-input field a background color */
