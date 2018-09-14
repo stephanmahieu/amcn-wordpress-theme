@@ -1,6 +1,8 @@
 # AMCN Wordpress Theme
 Adaptation (Child) of the wordpress Twenty Fourteen theme for the Alaska Malamute Club Nederland (A.M.C.N.).
 
+See it in action: http://www.amcn.nl/
+
 ## Enhancements
 
 ### Styling
