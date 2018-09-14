@@ -7,8 +7,8 @@ See it in action: http://www.amcn.nl/
 
 ### Styling
 Many improvements/changes to the default styling:
-* The width is increased from 474 to 774
-* A home image is added left to the site title
+* width is increased from 474 to 774
+* a home image is added left to the site title
 * less whitespace between miscellaneous elements making it all visually a bit more compact
 * adding background-color to tables
 * custom bullet (paw print) for first level in unordered list
