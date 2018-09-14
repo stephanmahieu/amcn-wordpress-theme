@@ -20,14 +20,14 @@ Many enhancements:
 
 ### Fix menu for larger touch devices
 Fix sub-menus for touch devices and better focus for hidden submenu items for accessibility.
-Fix: [navigation.js](blob/master/js/navigation.js)
+Fix: [navigation.js](https://github.com/stephanmahieu/amcn-wordpress-theme/blob/master/js/navigation.js)
 
 On a tablet without this fix opening a menu (by touch) would show all menu items but also immediately
 select the first menu item given the user no chance of selecting any of the menu-items.
 
 ### Scroll to top
 A scroll to top button is automatically displayed at the bottom of the screen for long pages and
-dims automatically after a few seconds. See [scoll-top.js](blob/master/js/scoll-top.js)
+dims automatically after a few seconds. See [scroll-top.js](https://github.com/stephanmahieu/amcn-wordpress-theme/blob/master/js/scroll-top.js)
 
 ### Shortcodes for special posts
 Extra shortcodes have been added for _planbericht_, _dekbericht_ and _geboortebericht_.
@@ -74,7 +74,7 @@ its features.
 ### Calculated fields
 Some basic javascript support for calculated fields is available.
 
-I have added two js functions in [amcnCustom.js](blob/master/js/amcnCustom.js) that can be called from javascript.
+I have added two js functions in [amcnCustom.js](https://github.com/stephanmahieu/amcn-wordpress-theme/blob/master/js/amcnCustom.js) that can be called from javascript.
 
 * **amcnAddCalculatedField(idFldAmount, factor, idFldSum, precision)**  
   Value from input with id **_idFldAmount_** is multiplied with **_factor_**,
