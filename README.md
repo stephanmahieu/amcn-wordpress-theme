@@ -1,22 +1,25 @@
-# amcn-wordpress-theme
+# AMCN Wordpress Theme
 Adaptation (Child) of the wordpress Twenty Fourteen theme for the Alaska Malamute Club Nederland (A.M.C.N.).
 
 ## Enhancements
 
 ### Styling
-Many enhancements:
+Many improvements/changes to the default styling:
 * The width is increased from 474 to 774
 * A home image is added left to the site title
 * less whitespace between miscellaneous elements making it all visually a bit more compact
 * adding background-color to tables
 * custom bullet (paw print) for first level in unordered list
 * blockquotes radically changed
-* additional styling for:
+* styling for custom shortcodes:
+  * _geboortebericht_
+  * _dekbericht_
+  * _planbericht_ 
+* additional styling added to style.css for:
   * Basic Google Maps Placemarks
   * Stupid Table Sorter
   * Fast Secure Contact Form _(deprecated)_
   * Contact Form 7
-* styling for shortcode: _geboortebericht_, _dekbericht_ and _planbericht_ 
 
 ### Fix menu for larger touch devices
 Fix sub-menus for touch devices and better focus for hidden submenu items for accessibility.
@@ -51,7 +54,7 @@ Using the incorporated [stupidtable js library](https://github.com/joequery/Stup
 For the table **thead** and **tbody** tags must be used. Add a **data-sort** attribute of ***datatype*** to the **th** elements to make them
 sortable by that data type. If you don't want that column to be sortable, just omit the data-sort attribute.
 
-The predefined ***datatype***s for sorting are:
+The predefined ***datatype*** 's for sorting are:
 * int
 * float
 * string (case-sensitive)
@@ -83,7 +86,7 @@ I have added two js functions in [amcnCustom.js](https://github.com/stephanmahie
   The sum is calculated automatically each time the value changes.
   
 * **amcnSumFields(idFlds, idSum, precision)**
-  Calculate the sum of an array of fields (**_idFlds_**), the result is stored in field with id **_idSum_**.
+  Calculate the sum of an array of fields \[**_idFlds_**\], the result is stored in field with id **_idSum_**.
   Result is displayed with **_precision_** no of decimals.  
   The sum is automatically recalculated when one of the fieldvalue chages.
 
@@ -94,6 +97,6 @@ amcnAddCalculatedField("#fld3", 10.0, "#fld4", 2);
 amcnSumFields(["#fld2", "#fld4"], "#sum", 2);
 ```
 
-## Screenshot
+## Screenshot of the AMCN theme
 
 ![Screenshoot](https://raw.githubusercontent.com/stephanmahieu/amcn-wordpress-theme/master/screenshot.png "Main Dialog Contextmenu")
