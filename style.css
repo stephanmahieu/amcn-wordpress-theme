@@ -446,8 +446,9 @@ blockquote cite:before {
 /*----------[Tabel aangesloten fokkers]-----------*/
 /*------------------------------------------------*/
 th.fokinfo-column {
-	min-width: 8.0em;
+	min-width: 5.0em;
 	padding: 5px;
+	font-variant: all-small-caps;
 }
 span.fokinfo {
 	font-size: 12px;
