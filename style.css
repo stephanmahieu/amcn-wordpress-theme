@@ -65,7 +65,8 @@ h1.site-title a {
 	background: url('images/home18x18.png') no-repeat left center;
 	padding-left: 26px;
 }
-h1.site-title a:hover {
+h1.site-title a:hover,
+h1.site-title a:active{
 	background: url('images/home18x18_green.png') no-repeat left center;
 }
 
