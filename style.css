@@ -619,3 +619,10 @@ input[type="radio"] {
 		margin-right: 0;
 	}
 }
+
+/*------------------------------------------------*/
+/*---[Contact Form 7, reCaptcha v3 integration]---*/
+/*------------------------------------------------*/
+.grecaptcha-badge {
+	opacity:0 !important;
+}
