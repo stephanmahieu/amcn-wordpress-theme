@@ -94,6 +94,12 @@ function amcn_theme_editor_styles() {
 }
 add_action( 'admin_init', 'amcn_theme_editor_styles' );
 
+// Add custom Gutenberg (block) styling
+function amcn_theme_custom_block_styles() {
+    wp_enqueue_style( 'amcn_theme_custom_block_styles', get_stylesheet_directory_uri() . '/css/custom-block-styles.css' );
+}
+add_action( 'enqueue_block_assets', 'amcn_theme_custom_block_styles' );
+
 // Special translation of the twentyfourteen textdomain
 function amcn_language_setup() {
     load_child_theme_textdomain( 'twentyfourteen', get_stylesheet_directory() . '/languages' );

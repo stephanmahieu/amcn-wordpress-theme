@@ -1,0 +1,13 @@
+/*------------------------------------------------*/
+/*----------[styling Gutenberg Blocks]------------*/
+/*------------------------------------------------*/
+
+/* Main column width, override width for pages, same as site */
+.wp-block {
+    max-width: 774px; /* 474px + 30px to account for padding */
+}
+
+/* Block usually contains one or more paragraphs with bottom margins, no need for an additional block margin. */
+.wp-block-columns {
+    margin-bottom: 0;
+}
