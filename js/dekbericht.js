@@ -24,8 +24,8 @@
 			return {
 				longname : "Dekbericht",
 				author : 'Stephan Mahieu',
-				authorurl : 'http://web.inter.nl.net/users/S.J.Mahieu/',
-				infourl : 'http://web.inter.nl.net/users/S.J.Mahieu/',
+				authorurl : 'https://github.com/stephanmahieu',
+				infourl : 'https://github.com/stephanmahieu/amcn-wordpress-theme',
 				version : "1.1"
 			};
 		}
